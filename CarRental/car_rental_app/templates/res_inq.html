@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+        <h1>Client Inquiry</h1>
+        <div>Client: {{res_inq.name}} {{res_inq.surname}}</div>
+        <div>Starting date: {{ res_inq.start_date.}}</div>
+        <div>Ending date: {{res_inq.end_date}}</div>
+        <div>Car class: {{ res_inq.car_class}}</div>
+        <div>Abolition: {{ res_inq.abolition }}</div>
+        <div>Insurance: {{ res_inq.insurence }}</div>
+        <div>Child_seat: {{ res_inq.child_seat}}</div>
+        <div>Number of child seats: {{ res_inq.num_of_cs}}</div>
+        <div>Additional driver: {{ res_inq.additional_driver}}</div>
+        <div>Phone number: {{ res_inq.phonenum_q}}</div>
+        <div>e-mail: {{ res_inq.email_q}}</div>
+
+        <<h4><a href='/res_inq_confirm_delete/{{ res_inq.id }}'>Delete inquiry</a> </h4>
+{%  endblock %}
